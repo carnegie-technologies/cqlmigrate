@@ -1,0 +1,3 @@
+#!/usr/bin/env node
+//tslint:disable
+require("./app");
