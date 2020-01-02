@@ -1,5 +1,5 @@
 {
-    "name": "cqlmigrate",
+    "name": "@carnegietech/cqlmigrate",
     "version": "1.0.2",
     "author": "Carnegie Technologies",
     "license": "Apache-2.0",
@@ -8,8 +8,8 @@
     "scripts": {
         "dist-clean": "rimraf build/ coverage/",
         "lint": "tslint --project tsconfig.lint.json -c tslint.json",
-        "compile": "tsc && yarn copy:package && cp src/cqlmigrate build/",
-        "compile:production": "tsc -p tsconfig.production.json && yarn copy:package",
+        "compile": "tsc && cp src/cqlmigrate build/",
+        "compile:production": "tsc -p tsconfig.production.json",
         "start": "NODE_ENV=development npm-run-all dist-clean lint compile && node build/app.js",
         "test": "NODE_ENV=testing mocha -r ts-node/register test/**/*.ts",
         "copy:package": "cp -r yarn.lock package.json Dockerfile build/",

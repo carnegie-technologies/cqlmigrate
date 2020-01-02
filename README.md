@@ -86,13 +86,13 @@ keyspaces/
 With npm
 
 ```sh
-npm install -g cqlmigrate
+npm install -g @carnegietech/cqlmigrate
 ```
 
 or with yarn
 
 ```sh
-yarn global add cqlmigrate
+yarn global add @carnegietech/cqlmigrate
 ```
 
 After installing, cqlmigrate can be run with
