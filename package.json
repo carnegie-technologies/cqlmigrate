@@ -41,7 +41,7 @@
     },
     "dependencies": {
         "cassandra-driver": "^3.2.2",
-        "convict": "^5.2.0",
+        "convict": "^6.2.4",
         "fs-extra": "^5.0.0",
         "klaw-sync": "^3.0.2",
         "moo": "^0.4.3"
